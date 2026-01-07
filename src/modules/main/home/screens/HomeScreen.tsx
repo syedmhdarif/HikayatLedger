@@ -12,6 +12,7 @@ import { useAppSelector } from '../../../../app/store/hooks';
 import { RootState } from '../../../../app/store';
 import { StyleSheet, View } from 'react-native';
 import { spacing } from '../../../../theme';
+import { formatDate } from '../../../../utils';
 
 export default function HomeScreen() {
   const { t } = useTranslation();
@@ -30,6 +31,9 @@ export default function HomeScreen() {
       <View style={styles.padding}>
         <Text variant="h2" weight="bold">
           {profile?.profile_name}
+        </Text>
+        <Text variant="body">
+          {formatDate(profile?.date_of_birth as string)}
         </Text>
         <Text variant="body">{profile?.email}</Text>
       </View>
