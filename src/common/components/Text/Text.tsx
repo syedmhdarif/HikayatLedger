@@ -4,7 +4,7 @@ import {
   TextProps as RNTextProps,
   StyleSheet,
 } from 'react-native';
-import { useTheme, typography } from '../../../theme';
+import { useTheme } from '../../../theme';
 import { fontFamilyMap, variantStyles } from './Text.types';
 
 type TextColor =
@@ -28,10 +28,11 @@ interface TextProps extends RNTextProps {
   weight?:
     | 'thin'
     | 'light'
-    | 'regular'
+    | 'normal'
     | 'medium'
     | 'semibold'
     | 'bold'
+    | 'extrabold'
     | 'black';
   color?: TextColor;
   align?: 'left' | 'center' | 'right';
@@ -40,7 +41,7 @@ interface TextProps extends RNTextProps {
 
 export default function Text({
   variant = 'body',
-  weight = 'regular',
+  weight = 'normal',
   color = 'primary',
   align = 'left',
   style,
@@ -75,9 +76,9 @@ export default function Text({
         styles.base,
         variantStyles[variant],
         {
-          fontFamily: fontFamilyMap[weight],
           color: getColor(),
           textAlign: align,
+          fontFamily: fontFamilyMap[weight],
         },
         style,
       ]}
@@ -90,6 +91,6 @@ export default function Text({
 
 const styles = StyleSheet.create({
   base: {
-    fontFamily: 'Roboto-Regular',
+    // fontFamily is set dynamically based on weight prop
   },
 });

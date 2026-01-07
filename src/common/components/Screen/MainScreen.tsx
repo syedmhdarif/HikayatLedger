@@ -8,6 +8,7 @@ interface ScreenProps {
   style?: ViewStyle;
   safeArea?: boolean;
   edges?: ('top' | 'bottom' | 'left' | 'right')[];
+  fullWidth?: boolean;
 }
 
 export default function MainScreen({
@@ -15,11 +16,13 @@ export default function MainScreen({
   style,
   safeArea = true,
   edges = ['top', 'bottom', 'left', 'right'],
+  fullWidth = false,
 }: ScreenProps) {
   const theme = useTheme();
 
   const containerStyle = [
     styles.container,
+    fullWidth && styles.fullWidthContainer,
     { backgroundColor: theme.colors.background },
     style,
   ];
@@ -39,5 +42,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 16,
+  },
+  fullWidthContainer: {
+    paddingHorizontal: 0,
+    width: '100%',
   },
 });

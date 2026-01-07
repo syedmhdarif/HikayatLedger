@@ -4,17 +4,13 @@ import Colors from './colors';
 // Font family definitions
 export const fontFamily = {
   thin: 'Roboto-Thin',
-  thinItalic: 'Roboto-ThinItalic',
   light: 'Roboto-Light',
-  lightItalic: 'Roboto-LightItalic',
   regular: 'Roboto-Regular',
-  regularItalic: 'Roboto-Italic',
   medium: 'Roboto-Medium',
-  mediumItalic: 'Roboto-MediumItalic',
+  semibold: 'Roboto-SemiBold',
   bold: 'Roboto-Bold',
-  boldItalic: 'Roboto-BoldItalic',
+  extrabold: 'Roboto-ExtraBold',
   black: 'Roboto-Black',
-  blackItalic: 'Roboto-BlackItalic',
 } as const;
 
 export const fontWeight = {

@@ -1,12 +1,14 @@
 import { TextProps as RNTextProps, TextStyle } from 'react-native';
+import { fontFamily } from '../../../theme/typography';
 
 export type FontWeight =
   | 'thin'
   | 'light'
-  | 'regular'
+  | 'normal'
   | 'medium'
   | 'semibold'
   | 'bold'
+  | 'extrabold'
   | 'black';
 
 export type TextVariant =
@@ -28,13 +30,14 @@ export interface TextProps extends RNTextProps {
 }
 
 export const fontFamilyMap: Record<FontWeight, string> = {
-  thin: 'Roboto-Thin',
-  light: 'Roboto-Light',
-  regular: 'Roboto-Regular',
-  medium: 'Roboto-Medium',
-  semibold: 'Roboto-Medium',
-  bold: 'Roboto-Bold',
-  black: 'Roboto-Black',
+  thin: fontFamily.thin,
+  light: fontFamily.light,
+  normal: fontFamily.regular,
+  medium: fontFamily.medium,
+  semibold: fontFamily.semibold,
+  bold: fontFamily.bold,
+  extrabold: fontFamily.extrabold,
+  black: fontFamily.black,
 };
 
 export const variantStyles: Record<TextVariant, TextStyle> = {

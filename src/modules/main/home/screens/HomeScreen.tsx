@@ -1,11 +1,23 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Button, MainScreen, Text, Toast } from '../../../../common/components';
+import {
+  Button,
+  Divider,
+  MainScreen,
+  Text,
+  Toast,
+} from '../../../../common/components';
 import { useAuth } from '../../../../common/context/AuthContext';
+import { useAppSelector } from '../../../../app/store/hooks';
+import { RootState } from '../../../../app/store';
+import { StyleSheet, View } from 'react-native';
+import { spacing } from '../../../../theme';
 
 export default function HomeScreen() {
   const { t } = useTranslation();
   const { signOut } = useAuth();
+
+  const profile = useAppSelector((state: RootState) => state.auth.profile);
 
   const handleSignOut = async () => {
     const { error } = await signOut();
@@ -14,10 +26,24 @@ export default function HomeScreen() {
     }
   };
   return (
-    <MainScreen>
-      <Text variant="h1">{t('navigation.home')}</Text>
+    <MainScreen fullWidth>
+      <View style={styles.padding}>
+        <Text variant="h2" weight="bold">
+          {profile?.profile_name}
+        </Text>
+        <Text variant="body">{profile?.email}</Text>
+      </View>
 
-      <Button title={t('auth.logout')} onPress={handleSignOut} />
+      <Divider thickness={14} />
+      <View style={styles.padding}>
+        <Button title={t('auth.logout')} onPress={handleSignOut} />
+      </View>
     </MainScreen>
   );
 }
+
+const styles = StyleSheet.create({
+  padding: {
+    padding: spacing.md,
+  },
+});
