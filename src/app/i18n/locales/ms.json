@@ -1,0 +1,130 @@
+{
+  "common": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Padam",
+    "edit": "Sunting",
+    "add": "Tambah",
+    "search": "Cari",
+    "loading": "Memuatkan...",
+    "error": "Ralat",
+    "success": "Berjaya",
+    "warning": "Amaran",
+    "info": "Maklumat",
+    "confirm": "Sahkan",
+    "back": "Kembali",
+    "next": "Seterusnya",
+    "done": "Selesai",
+    "welcome": "Selamat Datang",
+    "welcomeBack": "Selamat Kembali"
+  },
+  "navigation": {
+    "home": "Utama",
+    "invoices": "Invois",
+    "quotations": "Sebut Harga",
+    "customers": "Pelanggan",
+    "products": "Produk",
+    "settings": "Tetapan",
+    "profile": "Profil",
+    "activity": "Aktiviti",
+    "cashFlow": "Aliran Tunai"
+  },
+  "activity": {
+    "title": "Aktiviti"
+  },
+  "cashflow": {
+    "title": "Aliran Tunai"
+  },
+  "invoice": {
+    "title": "Invois",
+    "newInvoice": "Invois Baharu",
+    "invoiceNumber": "Nombor Invois",
+    "invoiceDate": "Tarikh Invois",
+    "dueDate": "Tarikh Akhir",
+    "subtotal": "Jumlah Kecil",
+    "tax": "Cukai",
+    "discount": "Diskaun",
+    "total": "Jumlah",
+    "status": {
+      "draft": "Draf",
+      "sent": "Dihantar",
+      "paid": "Dibayar",
+      "overdue": "Tertunggak",
+      "cancelled": "Dibatalkan"
+    }
+  },
+  "quotation": {
+    "title": "Sebut Harga",
+    "newQuotation": "Sebut Harga Baharu",
+    "quotationNumber": "Nombor Sebut Harga",
+    "validUntil": "Sah Sehingga",
+    "convertToInvoice": "Tukar ke Invois"
+  },
+  "customer": {
+    "title": "Pelanggan",
+    "name": "Nama",
+    "email": "Emel",
+    "phone": "Telefon",
+    "address": "Alamat",
+    "company": "Syarikat"
+  },
+  "product": {
+    "title": "Produk",
+    "name": "Nama",
+    "description": "Penerangan",
+    "price": "Harga",
+    "unit": "Unit",
+    "sku": "SKU"
+  },
+  "auth": {
+    "login": "Log Masuk",
+    "loginHere": "Log Masuk Di Sini",
+    "logout": "Log Keluar",
+    "signUp": "Daftar",
+    "loginTitle": "Selamat Kembali",
+    "loginSubtitle": "Masukkan emel dan kata laluan anda untuk meneruskan",
+    "forgotPassword": "Lupa Kata Laluan?",
+    "noAccount": "Tiada akaun?",
+    "haveAccount": "Jika anda sudah mempunyai akaun"
+  },
+  "settings": {
+    "title": "Tetapan",
+    "language": "Bahasa",
+    "currency": "Mata Wang",
+    "businessInfo": "Maklumat Perniagaan",
+    "taxSettings": "Tetapan Cukai",
+    "invoicePrefix": "Awalan Invois",
+    "quotationPrefix": "Awalan Sebut Harga"
+  },
+  "share": {
+    "native": "Kongsi",
+    "copyLink": "Salin Pautan",
+    "linkCopied": "Pautan Disalin",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "twitter": "Twitter",
+    "facebook": "Facebook"
+  },
+  "validation": {
+    "emailRequired": "Emel diperlukan",
+    "emailInvalid": "Sila masukkan emel yang sah",
+    "passwordRequired": "Kata laluan diperlukan",
+    "passwordMin": "Kata laluan mestilah sekurang-kurangnya 6 aksara",
+    "passwordMatch": "Kata laluan tidak sepadan",
+    "profileNameRequired": "Nama profil diperlukan",
+    "profileNameMin": "Nama profil mestilah sekurang-kurangnya 2 aksara",
+    "dateOfBirthRequired": "Tarikh lahir diperlukan"
+  },
+  "form": {
+    "profileName": "Nama Profil",
+    "profileNamePlaceholder": "Masukkan nama profil anda",
+    "dateOfBirth": "Tarikh Lahir",
+    "dateOfBirthPlaceholder": "Masukkan tarikh lahir anda",
+    "confirmPassword": "Sahkan Kata Laluan",
+    "confirmPasswordPlaceholder": "Masukkan pengesahan kata laluan",
+    "email": "Emel",
+    "emailPlaceholder": "Masukkan emel anda",
+    "password": "Kata Laluan",
+    "passwordPlaceholder": "Masukkan kata laluan anda"
+  }
+}

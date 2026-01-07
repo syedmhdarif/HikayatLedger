@@ -1,0 +1,122 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "welcome": "Welcome",
+    "welcomeBack": "Welcome Back"
+  },
+  "navigation": {
+    "home": "Home",
+    "invoices": "Invoices",
+    "quotations": "Quotations",
+    "customers": "Customers",
+    "products": "Products",
+    "settings": "Settings",
+    "profile": "Profile",
+    "activity": "Activity",
+    "cashFlow": "Cash Flow"
+  },
+  "activity": {
+    "title": "Activity"
+  },
+  "cashflow": {
+    "title": "Cash Flow"
+  },
+  "invoice": {
+    "title": "Invoice",
+    "newInvoice": "New Invoice",
+    "invoiceNumber": "Invoice Number",
+    "invoiceDate": "Invoice Date",
+    "dueDate": "Due Date",
+    "subtotal": "Subtotal",
+    "tax": "Tax",
+    "discount": "Discount",
+    "total": "Total",
+    "status": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled"
+    }
+  },
+  "quotation": {
+    "title": "Quotation",
+    "newQuotation": "New Quotation",
+    "quotationNumber": "Quotation Number",
+    "validUntil": "Valid Until",
+    "convertToInvoice": "Convert to Invoice"
+  },
+  "customer": {
+    "title": "Customer",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "company": "Company"
+  },
+  "auth": {
+    "login": "Login",
+    "loginHere": "Login Here",
+    "logout": "Logout",
+    "signUp": "Sign Up",
+    "loginTitle": "Welcome Back",
+    "loginSubtitle": "Enter your email and password to continue",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "If you already have an account"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "currency": "Currency",
+    "businessInfo": "Business Information",
+    "taxSettings": "Tax Settings",
+    "invoicePrefix": "Invoice Prefix",
+    "quotationPrefix": "Quotation Prefix"
+  },
+  "share": {
+    "native": "Share",
+    "copyLink": "Copy Link",
+    "linkCopied": "Link Copied",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "twitter": "Twitter",
+    "facebook": "Facebook"
+  },
+  "validation": {
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email",
+    "passwordRequired": "Password is required",
+    "passwordMin": "Password must be at least 6 characters",
+    "passwordMatch": "Passwords do not match",
+    "profileNameRequired": "Profile name is required",
+    "profileNameMin": "Profile name must be at least 2 characters",
+    "dateOfBirthRequired": "Date of birth is required"
+  },
+  "form": {
+    "profileName": "Profile Name",
+    "profileNamePlaceholder": "Enter your profile name",
+    "dateOfBirth": "Date of Birth",
+    "dateOfBirthPlaceholder": "Enter your date of birth",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Enter your confirm password",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password"
+  }
+}

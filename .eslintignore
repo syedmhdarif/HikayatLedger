@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+android/
+ios/
+.bundle/
+build/
+dist/
+
+# Coverage
+coverage/
+
+# Metro bundler
+.expo/
+.metro-health-check*
+
+# Generated files
+*.generated.*
+
+# Misc
+.git/
+*.lock
+
+**/*.js
+**/*.jsx
+**/*.ts
+**/*.tsx  

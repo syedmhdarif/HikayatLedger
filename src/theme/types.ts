@@ -1,0 +1,39 @@
+export interface Theme {
+  dark: boolean;
+  colors: {
+    primary: string;
+    primaryLight: string;
+    primaryDark: string;
+    secondary: string;
+    secondaryLight: string;
+    secondaryDark: string;
+    success: string;
+    successLight: string;
+    successDark: string;
+    warning: string;
+    warningLight: string;
+    warningDark: string;
+    error: string;
+    errorLight: string;
+    errorDark: string;
+    info: string;
+    infoLight: string;
+    infoDark: string;
+    draft: string;
+    sent: string;
+    paid: string;
+    overdue: string;
+    cancelled: string;
+    background: string;
+    surface: string;
+    surfaceVariant: string;
+    text: string;
+    textSecondary: string;
+    textTertiary: string;
+    border: string;
+    borderLight: string;
+    disabled: string;
+    placeholder: string;
+    backdrop: string;
+  };
+}
