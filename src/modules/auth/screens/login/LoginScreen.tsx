@@ -67,7 +67,7 @@ const LoginScreen: React.FC = () => {
         />
       </View>
 
-      <Spacer unit="md" />
+      <Spacer unit="xs" />
 
       <>
         <Text style={typography.headlineLarge} color="primary">
@@ -172,8 +172,8 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
   },
   logo: {
-    width: 160,
-    height: 160,
+    width: 140,
+    height: 140,
   },
   signUpContainer: {
     flexDirection: 'row',
