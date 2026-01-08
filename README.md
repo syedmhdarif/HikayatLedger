@@ -1,97 +1,170 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# HikayatLedger
 
-# Getting Started
+A React Native mobile application for personal and business financial tracking. HikayatLedger helps users manage their financial records, track transactions, and maintain organized ledger entries.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Future Direction
 
-## Step 1: Start Metro
+After working on this task given by recruiter, I'm thinking of developing this project into a full-featured **Invoice and Quotation Generator**. Planned features include:
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- Create and manage professional invoices
+- Generate quotations for clients
+- Export documents as PDF
+- Client management
+- Payment tracking
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have completed the [React Native Environment Setup](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+
+**Requirements:**
+
+- Node.js >= 20
+- Yarn package manager
+- Xcode (for iOS development)
+- Android Studio (for Android development)
+
+---
+
+## Installation
+
+### 1. Clone the Repository
 
 ```sh
-# Using npm
-npm start
+git clone https://github.com/your-username/HikayatLedger.git
+cd HikayatLedger
+```
 
-# OR using Yarn
+### 2. Install Dependencies
+
+```sh
+yarn install
+```
+
+### 3. Set Up Environment Variables
+
+This project requires environment variables to connect to Supabase and other services.
+
+1. Create a `.env` file in the root of the project:
+
+```sh
+touch .env
+```
+
+2. Copy the environment variables from the email provided and paste them into the `.env` file.
+
+The `.env` file should look something like this:
+
+```env
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+# Add other environment variables as needed
+```
+
+> **Note:** Never commit your `.env` file to version control. It is already included in `.gitignore`.
+
+### 4. iOS Setup
+
+For iOS, install CocoaPods dependencies:
+
+```sh
+# Install Ruby bundler dependencies (first time only)
+bundle install
+
+# Install CocoaPods dependencies
+yarn pod
+```
+
+---
+
+## Running the App
+
+### Start Metro Bundler
+
+```sh
 yarn start
 ```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
+### Run on Android
 
 ```sh
-# Using npm
-npm run android
-
-# OR using Yarn
 yarn android
 ```
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### Run on iOS
 
 ```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## Useful Scripts
 
-## Step 3: Modify your app
+| Command              | Description                        |
+| -------------------- | ---------------------------------- |
+| `yarn start`         | Start Metro bundler                |
+| `yarn start:reset`   | Start Metro with cache reset       |
+| `yarn android`       | Run app on Android                 |
+| `yarn ios`           | Run app on iOS                     |
+| `yarn lint`          | Run ESLint                         |
+| `yarn format`        | Format code with Prettier          |
+| `yarn test`          | Run tests                          |
+| `yarn clean`         | Full clean and reinstall           |
+| `yarn clean:android` | Clean Android build                |
+| `yarn clean:ios`     | Clean iOS build and reinstall pods |
+| `yarn pod`           | Install iOS CocoaPods              |
+| `yarn pod:update`    | Update iOS CocoaPods               |
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## Troubleshooting
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+If you encounter issues:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+1. **Clear all caches:**
 
-## Congratulations! :tada:
+   ```sh
+   yarn clean
+   ```
 
-You've successfully run and modified your React Native App. :partying_face:
+2. **Reset Metro cache:**
 
-### Now what?
+   ```sh
+   yarn start:reset
+   ```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+3. **For iOS specific issues:**
 
-# Troubleshooting
+   ```sh
+   yarn clean:ios
+   ```
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+4. **For Android specific issues:**
+   ```sh
+   yarn clean:android
+   ```
 
-# Learn More
+For more help, see the [React Native Troubleshooting](https://reactnative.dev/docs/troubleshooting) guide.
 
-To learn more about React Native, take a look at the following resources:
+---
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Tech Stack
+
+- **React Native** - Mobile framework
+- **TypeScript** - Type-safe JavaScript
+- **Supabase** - Backend and database
+- **Redux Toolkit & Zustand** - State management
+- **React Navigation** - Navigation
+- **React Hook Form + Yup** - Form handling and validation
+- **i18next** - Internationalization
+- **date-fns** - Date utilities
+
+---
+
+## License
+
+This project is private and proprietary.
