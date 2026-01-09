@@ -16,7 +16,9 @@
     "next": "Seterusnya",
     "done": "Selesai",
     "welcome": "Selamat Datang",
-    "welcomeBack": "Selamat Kembali"
+    "welcomeBack": "Selamat Kembali",
+    "somethingWentWrong": "Ralat",
+    "tryAgain": "Sila cuba lagi"
   },
   "navigation": {
     "home": "Utama",

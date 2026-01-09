@@ -16,7 +16,9 @@
     "next": "Next",
     "done": "Done",
     "welcome": "Welcome",
-    "welcomeBack": "Welcome Back"
+    "welcomeBack": "Welcome Back",
+    "somethingWentWrong": "Something went wrong",
+    "tryAgain": "Please try again later"
   },
   "navigation": {
     "home": "Home",

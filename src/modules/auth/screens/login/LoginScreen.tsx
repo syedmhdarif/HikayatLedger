@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { Alert, Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {
@@ -10,7 +10,6 @@ import {
   Spacer,
   Text,
   TextInput,
-  Toast,
 } from '../../../../common/components';
 import { LoginFormData, useAuthSchemas } from '../../hooks';
 import { useTranslation } from 'react-i18next';
@@ -51,10 +50,10 @@ const LoginScreen: React.FC = () => {
     async (data: LoginFormData) => {
       const { error } = await signIn(data);
       if (error) {
-        Toast({ message: error, type: 'error' });
+        Alert.alert(t('common.somethingWentWrong'), error);
       }
     },
-    [signIn],
+    [signIn, t],
   );
 
   return (
