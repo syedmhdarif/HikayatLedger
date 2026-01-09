@@ -80,8 +80,7 @@ export const authService = {
     if (signInError) {
       return {
         success: false,
-        error:
-          'Something went wrong. Please try again later. User not logged in.',
+        error: signInError.message,
         data: null,
       };
     }
@@ -99,8 +98,7 @@ export const authService = {
     if (error) {
       return {
         success: false,
-        error:
-          'Something went wrong. Please try again later. User not logged out.',
+        error: error.message,
         data: null,
       };
     }
